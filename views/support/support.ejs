@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><%= title %></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/stylesheets/styles_old.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/javascripts/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript" src="/javascripts/wpyou.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/javascripts/respond.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/javascripts/wow.min.js"></script>
+    <script type="text/javascript">new WOW().init();</script>
+</head>
+<body class="custom-background body-hp">
+<% include ../header.html %>
+
+<div class="breadcrumb"><div class="inner">
+        <h2>
+            服务与支持        </h2>
+        <div class="crumb-box"><a id="hp" href="http://www.trandomed.com">首页</a> <i>&gt;</i><span class="current">服务与支持</span></div>
+    </div></div>
+
+<div class="inner container">    <!-- Content Begin-->
+    <div class="column-fluid"><div class="content fullwidth inner">
+            <!-- Post begin -->
+            <article class="post">
+                <div class="entry">
+                    <%- mainbody %>
+                </div>
+            </article>
+            <!-- Post end -->
+        </div></div>
+    <!-- Content end-->
+    <div class="clearfix"></div>
+    <!-- FriendLink begin -->
+    <!-- FriendLink end -->
+</div>
+
+<% include ../footer.html %>
+
+</body>
+</html>

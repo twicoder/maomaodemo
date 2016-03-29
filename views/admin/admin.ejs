@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><%= title %></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/stylesheets/bootstrap-theme.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/stylesheets/styles_admin.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/javascripts/jquery-1.11.1.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script>
+        function onTest(){
+            $.ajax({
+                url: "/about/intro",
+                cache: false,
+                success: function(html){
+                    $("#divId").append(html);
+                }
+            });
+        }
+    </script>
+</head>
+<body class="custom-background body-hp">
+
+<% include header.html %>
+
+
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+        <button onclick="onTest()">test</button>
+        <div id="divId"></div>
+    </div>
+
+<% include footer.html %>
+
+</body>
+</html>
